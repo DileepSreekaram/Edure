@@ -63,14 +63,4 @@ class Operation:
                     shutil.move(src=rename_file, dst=f".\\{meta_dict[patt]}")
     print("All files segregated successfully")
 
-    @classmethod
-    def write_to_file(cls, src, dst, ext):
-        """
-        This will write all the data of the files in the source location to a single destination file with the proper formatting. This function has the
-        power to extract all the file with given extension (ext) even from the sub-directories. Thus, you can give the source location as the outermost directory.
-        :param src:
-        :param dst:
-        :param ext:
-        :return:
-        """
         
