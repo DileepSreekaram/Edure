@@ -73,25 +73,4 @@ class Operation:
         :param ext:
         :return:
         """
-        combined = open(dst, "w+", encoding="utf-8")
-        for dir_path, dir_names, file_names in os.walk(src):
-            for file in file_names:
-                if file.endswith(ext):
-                    path = os.path.join(dir_path, file)
-                    heading = re.findall(r"[A-Za-z_0-9\(\)]+[^.]", file)[0]
-
-                    try:
-                        doc = docx.Document(path)
-                        data = ""
-                        full_text = []
-                        combined.writelines(f"\n\n----------------- {heading} ------------------\n\n")
-
-                        for para in doc.paragraphs:
-
-                            full_text.append(para.text)
-                            data = '\n'.join(full_text)
-
-                        combined.write(data)
-
-
-    
+        
