@@ -97,5 +97,4 @@ class Operation:
                         print("There was an error opening the file.")
                         return
 
-        combined.close()
-        print(f"All the files data copied to {dst}")
+    
