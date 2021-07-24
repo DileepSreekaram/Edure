@@ -93,8 +93,5 @@ class Operation:
 
                         combined.write(data)
 
-                    except IOError:
-                        print("There was an error opening the file.")
-                        return
 
     
